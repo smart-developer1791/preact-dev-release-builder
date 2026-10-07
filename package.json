@@ -1,0 +1,32 @@
+{
+  "name": "preact-dev-release-builder",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "format": "prettier --write src vite.config.ts --ignore-unknown",
+    "format:check": "prettier --check src vite.config.ts --ignore-unknown"
+  },
+  "dependencies": {
+    "@preact/signals": "^2.11.2",
+    "@tailwindcss/vite": "^4.3.3",
+    "fuse.js": "^7.5.0",
+    "idb-keyval": "^6.3.0",
+    "lucide-preact": "^1.47.0",
+    "preact": "^10.29.8",
+    "semver": "^7.8.5",
+    "tailwindcss": "^4.3.3",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.10.6",
+    "@types/node": "^24.13.3",
+    "@types/semver": "^7.8.0",
+    "prettier": "^3.9.8",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0"
+  }
+}

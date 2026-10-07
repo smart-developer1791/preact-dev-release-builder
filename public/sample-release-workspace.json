@@ -1,0 +1,30 @@
+{
+  "project": {
+    "name": "Northstar Console",
+    "repository": "https://github.com/example/northstar-console",
+    "currentVersion": "3.8.0",
+    "targetVersion": "4.0.0",
+    "channel": "stable",
+    "releaseDate": "2026-09-24"
+  },
+  "summary": "A reliability-focused release that introduces workspace roles, improves sync performance, and removes the legacy token exchange path.",
+  "commits": [
+    { "id": "c1", "hash": "a83f2e1", "type": "feat", "scope": "access", "subject": "add workspace-level role templates", "author": "Maya Chen", "email": "maya@example.dev", "date": "2026-09-19T11:20:00.000Z", "breaking": false, "selected": true },
+    { "id": "c2", "hash": "f19b4d0", "type": "refactor", "scope": "auth", "subject": "remove legacy token exchange endpoint", "author": "Owen Brooks", "email": "owen@example.dev", "date": "2026-09-18T16:10:00.000Z", "breaking": true, "selected": true },
+    { "id": "c3", "hash": "4b91dd2", "type": "perf", "scope": "sync", "subject": "batch workspace delta reconciliation", "author": "Priya Raman", "email": "priya@example.dev", "date": "2026-09-18T09:15:00.000Z", "breaking": false, "selected": true },
+    { "id": "c4", "hash": "8c207ab", "type": "fix", "scope": "billing", "subject": "preserve invoice filters after navigation", "author": "Maya Chen", "email": "maya@example.dev", "date": "2026-09-17T14:40:00.000Z", "breaking": false, "selected": true },
+    { "id": "c5", "hash": "e7704ca", "type": "feat", "scope": "audit", "subject": "export actor context with audit events", "author": "Leo Martins", "email": "leo@example.dev", "date": "2026-09-16T12:00:00.000Z", "breaking": false, "selected": true },
+    { "id": "c6", "hash": "2bd08f1", "type": "docs", "scope": "migration", "subject": "document v4 access-policy migration", "author": "Owen Brooks", "email": "owen@example.dev", "date": "2026-09-15T10:30:00.000Z", "breaking": false, "selected": true },
+    { "id": "c7", "hash": "c664a92", "type": "fix", "scope": "search", "subject": "avoid stale results during rapid query changes", "author": "Priya Raman", "email": "priya@example.dev", "date": "2026-09-14T18:20:00.000Z", "breaking": false, "selected": true },
+    { "id": "c8", "hash": "d18e15f", "type": "test", "scope": "roles", "subject": "cover inherited permission boundaries", "author": "Leo Martins", "email": "leo@example.dev", "date": "2026-09-13T15:25:00.000Z", "breaking": false, "selected": false },
+    { "id": "c9", "hash": "009faae", "type": "chore", "scope": "deps", "subject": "refresh browser compatibility data", "author": "Maya Chen", "email": "maya@example.dev", "date": "2026-09-12T08:45:00.000Z", "breaking": false, "selected": false },
+    { "id": "c10", "hash": "7ac091d", "type": "fix", "scope": "profile", "subject": "restore avatar fallback contrast", "author": "Owen Brooks", "email": "owen@example.dev", "date": "2026-09-11T13:10:00.000Z", "breaking": false, "selected": true }
+  ],
+  "checklist": [
+    { "id": "ci", "label": "CI and browser suites are green", "complete": true },
+    { "id": "migration", "label": "Breaking migration guide is approved", "complete": true },
+    { "id": "security", "label": "Security and dependency review is complete", "complete": false },
+    { "id": "canary", "label": "Canary telemetry meets the release threshold", "complete": false },
+    { "id": "rollback", "label": "Rollback owner and procedure are confirmed", "complete": false }
+  ]
+}

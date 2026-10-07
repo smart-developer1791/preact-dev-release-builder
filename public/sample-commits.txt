@@ -1,0 +1,4 @@
+a17c091 feat(workspaces): add saved dashboard layouts|Nora Hale|nora@example.dev|2026-09-20T10:00:00.000Z
+b088fe2 fix(search): cancel stale suggestion requests|Ilan Soto|ilan@example.dev|2026-09-20T09:00:00.000Z
+c201ae4 refactor(auth)!: remove deprecated session refresh grant|Nora Hale|nora@example.dev|2026-09-19T17:30:00.000Z
+d774bc1 docs(migration): add session grant upgrade notes|Ilan Soto|ilan@example.dev|2026-09-19T14:00:00.000Z
